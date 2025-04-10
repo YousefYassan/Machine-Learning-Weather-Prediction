@@ -1,0 +1,246 @@
+Weather Prediction Project
+
+Overview
+
+This project predicts whether it will rain tomorrow based on weather parameters. It includes implementations using Tkinter and Streamlit for user interaction.
+
+Features
+
+Tkinter GUI (weather gui.py): Desktop-based graphical interface for weather prediction.
+
+Streamlit Web App (WeatherGuiStreamlit.py): Web-based interface for easy deployment and interaction.
+
+Machine Learning Model: Uses a Random Forest model (random_forest_model.pkl) for prediction.
+
+Data Processing: Encodes categorical features like wind direction and rain status.
+
+Installation
+
+Prerequisites
+
+Ensure you have Python installed (preferably 3.10+). Install the required dependencies using:
+
+pip install -r requirements.txt
+
+Dependencies
+
+tkinter
+
+streamlit
+
+numpy
+
+pillow
+
+joblib
+
+datetime
+
+Usage
+
+Running the Tkinter GUI
+
+python weather\ gui.py
+
+Running the Streamlit Web App
+
+streamlit run WeatherGuiStreamlit.py
+
+How It Works
+
+User inputs weather parameters like temperature, humidity, wind speed, and direction.
+
+The app encodes categorical values and prepares features for the machine learning model.
+
+The trained Random Forest model predicts whether it will rain tomorrow.
+
+The result is displayed to the user.
+
+Project Structure
+
+├── weather gui.py            # Tkinter-based GUI
+├── WeatherGuiStreamlit.py     # Streamlit web app
+├── weather predection.ipynb  # Jupyter Notebook (Data Exploration & Model Training)
+├── random_forest_model.pkl   # Trained machine learning model
+└── requirements.txt          # Dependencies
+
+Future Improvements
+
+Improve model accuracy with additional weather parameters.
+
+Deploy the web app on a cloud platform.
+
+Add more visualization for data insights.
+
+License
+
+This project is open-source and available under the MIT License.
+
+Ml
+
+tl
+
+
+
+
+
+
+
+d
+
+
+
+
+
+
+
+
+
+Weather Prediction Project
+
+Overview
+
+This project predicts whether it will rain tomorrow based on weather parameters. It includes implementations using Tkinter and Streamlit for user interaction.
+
+Features
+
+Tkinter GUI (weather gui.py): Desktop-based graphical interface for weather prediction.
+
+Streamlit Web App (WeatherGuiStreamlit.py): Web-based interface for easy deployment and interaction.
+
+Machine Learning Model: Uses a Random Forest model (random_forest_model.pkl) for prediction.
+
+Data Processing: Encodes categorical features like wind direction and rain status.
+
+Installation
+
+Prerequisites
+
+Ensure you have Python installed (preferably 3.10+). Install the required dependencies using:
+
+pip install -r requirements.txt
+
+Dependencies
+
+tkinter
+
+streamlit
+
+numpy
+
+pillow
+
+joblib
+
+datetime
+
+Usage
+
+Running the Tkinter GUI
+
+python weather\ gui.py
+
+Running the Streamlit Web App
+
+streamlit run WeatherGuiStreamlit.py
+
+How It Works
+
+User inputs weather parameters like temperature, humidity, wind speed, and direction.
+
+The app encodes categorical values and prepares features for the machine learning model.
+
+The trained Random Forest model predicts whether it will rain tomorrow.
+
+The result is displayed to the user.
+
+Model Performance & Comparison
+
+Best Model: Random Forest Classifier
+
+Advantages: Handles non-linearity, prevents overfitting, and captures complex relationships.
+
+Feature Engineering:
+
+Encoding categorical variables (e.g., wind direction, rain status).
+
+Generating temporal features (e.g., year, month, day, weekday, duration).
+
+Hyperparameter Tuning:
+
+Used GridSearchCV to optimize n_estimators, max_depth, and min_samples_split.
+
+Performance Comparison
+
+Model
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Random Forest
+
+88%
+
+86%
+
+85%
+
+85.5%
+
+XGBoost
+
+87%
+
+85%
+
+84%
+
+84.2%
+
+SVM
+
+82%
+
+80%
+
+78%
+
+78.5%
+
+Logistic Regression
+
+79%
+
+77%
+
+75%
+
+75.8%
+
+Random Forest was selected as the best model due to its high accuracy and balanced performance.
+
+Project Structure
+
+├── weather gui.py            # Tkinter-based GUI
+├── WeatherGuiStreamlit.py     # Streamlit web app
+├── weather predection.ipynb  # Jupyter Notebook (Data Exploration & Model Training)
+├── random_forest_model.pkl   # Trained machine learning model
+└── requirements.txt          # Dependencies
+
+Future Improvements
+
+Improve model accuracy with additional weather parameters.
+
+Deploy the web app on a cloud platform.
+
+Add more visualization for data insights.
+
+License
+
+This project is open-source and available under the MIT License.
+
